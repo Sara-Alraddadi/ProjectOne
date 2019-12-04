@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+    <title>Connect 4 Game!</title>
+    <link rel="stylesheet" href="connectGame.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+       <div class="container">
+           <!--heading logo -->
+           <div class = "triangle" id = "triangle-up"></div>
+           <div class = "triangle" id = "triangle-down"></div>
+           <div class = "triangle" id = "triangle-up2"></div>
+           
+           <h1>CONNECT FOUR GAME!</h1>
+           <!--Game Board-->
+            <table>
+                <tr>
+                    <td class = "row r1 r5 v1" id = "col1"></td>
+                    <td class = "row r2 r5" id = "col2"></td>
+                    <td class = "row r3 r5" id = "col3"></td>
+                    <td class = "row r4 r5 v2" id = "col4"></td>
+                </tr>
+                <tr>
+                    <td class = "row r1 r6" id = "col5"></td>
+                    <td class = "row r2 r6 v1" id = "col6"></td>
+                    <td class = "row r3 r6 v2" id = "col7"></td>
+                    <td class = "row r4 r6" id = "col8"></td>
+                </tr>
+                <tr>
+                    <td class = "row r1 r7" id = "col9"></td>
+                    <td class = "row r2 r7 v2" id = "col10"></td>
+                    <td class = "row r3 r7 v1" id = "col11"></td>
+                    <td class = "row r4 r7" id = "col12"></td>
+                </tr>
+                <tr>
+                    <td class = "row r1 r8 v2" id = "col13"></td>
+                    <td class = "row r2 r8" id = "col14"></td>
+                    <td class = "row r3 r8" id = "col15"></td>
+                    <td class = "row r4 r8 v1" id = "col16"></td>
+                </tr>
+            </table>
+           <!--reset game button-->
+           <button onClick="window.location.reload();" class="glow-on-hover" type="button"><span id="b">Reset Game</span></button>
+           
+           <footer>
+           <div class = "triangle" id = "triangle-up"></div>
+           <div class = "triangle" id = "triangle-down"></div>
+           <div class = "triangle" id = "triangle-up2"></div>
+           </footer>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="connectGame.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+        
+        
+    </body>
+</html>
